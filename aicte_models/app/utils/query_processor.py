@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer
 from groq import Groq
 
 # Initialize Groq client
-groq_api_key = "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"
+groq_api_key = temp;
 groq_client = Groq(api_key=groq_api_key)
 
 # Load pre-processed data

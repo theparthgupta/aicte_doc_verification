@@ -8,7 +8,7 @@ from fastapi import  HTTPException
 from tempfile import NamedTemporaryFile
 import logging
 
-groq_api_key = "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"
+groq_api_key = temp;
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
