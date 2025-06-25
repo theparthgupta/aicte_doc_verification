@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">aicte</string>
+    <string name="title_activity_main">aicte</string>
+    <string name="package_name">com.aicte.sih</string>
+    <string name="custom_url_scheme">com.aicte.sih</string>
+</resources>

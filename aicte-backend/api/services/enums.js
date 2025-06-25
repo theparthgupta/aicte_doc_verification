@@ -1,0 +1,20 @@
+const LogAction = {
+    APP_CREATED: "APP_CREATED",
+    DOC_SUBMITTED: "DOC_SUBMITTED",
+    DOC_RESUBMITTED: "DOC_RESUBMITTED",
+    PRIORITY_CHANGED: "PRIORITY_CHANGED",
+    DOC_VIEWED: "DOC_VIEWED",
+    APPROVED: "APPROVED",
+    REJECTED: "REJECTED",
+}
+const Doer = {
+    EVALUATOR: "EVALUATOR",
+    UNIVERSITY: "UNIVERSITY",
+};
+
+const LogObject = {
+    APPLICATION: "APPLICATION",
+    DOCUMENT: "DOCUMENT",
+};
+
+module.exports = { LogAction, Doer, LogObject };

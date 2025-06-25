@@ -1,0 +1,66 @@
+[
+    {
+        "name": "New Institutions",
+        "documents": [
+            "Affidavit 1: Application verification and compliance",
+            "Affidavit 2: Sworn statement of data accuracy",
+            "Land Ownership documents",
+            "Lease agreement (if applicable)",
+            "Land Use Certificate",
+            "Building Plan",
+            "Financial Proof",
+            "Digital Signature Certificate (DSC)",
+            "Society/Trust/Company Registration Certificate",
+            "Detailed Project Report (DPR)",
+            "Compliance Documents",
+            "State NOC"
+        ]
+    },
+    {
+        "name": "Extension of Approval (EoA)",
+        "documents": [
+            "Self-Disclosure Format",
+            "Accreditation Proof",
+            "Admission Reports",
+            "Financial Statements",
+            "Infrastructure Readiness Report",
+            "State/University Affiliation Letter",
+            "Fee Payment Proof"
+        ]
+    },
+    {
+        "name": "Collaboration & Twinning Programs",
+        "documents": [
+            "Memorandum of Understanding (MoU)",
+            "Approval Letters",
+            "Course Curricula",
+            "Governance and Management Structure"
+        ]
+    },
+    {
+        "name": "Open and Distance Learning (ODL)/Online Learning (OL)",
+        "documents": [
+            "LMS Infrastructure Proof",
+            "Academic Records",
+            "Content Accreditation",
+            "Student Support Details"
+        ]
+    },
+    {
+        "name": "Penal Actions (For Norm Violations)",
+        "documents": [
+            "Compliance Report",
+            "Supporting Evidence",
+            "Affidavit"
+        ]
+    },
+    {
+        "name": "Hibernation or Closure of Institutions",
+        "documents": [
+            "Affidavit",
+            "Notification to Stakeholders",
+            "Student Transition Plan",
+            "Financial Settlement Proof"
+        ]
+    }
+]

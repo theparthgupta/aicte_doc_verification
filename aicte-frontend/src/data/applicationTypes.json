@@ -1,0 +1,209 @@
+[
+  {
+    "id": "new_institute",
+    "name": "New Institutions",
+    "documents": [
+      {
+        "id": "new_institute_0",
+        "name": "Affidavit 1: Application verification and compliance",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/AFFIDAVIT-1%20for%20creation%20of%20new%20password%20forgotten%20password.pdf"
+      },
+      {
+        "id": "new_institute_1",
+        "name": "Affidavit 2: Sworn statement of data accuracy",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/AFFIDAVIT-2%20for%20the%20applications%20submitted%20under%20chapter%201%202%204.pdf"
+      },
+      {
+        "id": "new_institute_2",
+        "name": "Land Ownership documents",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE%2014%20State%20Wise%20Competent.pdf"
+      },
+      {
+        "id": "new_institute_3",
+        "name": "Lease agreement (if applicable)",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-14%20State%20Wise%20Competent.pdf"
+      },
+      {
+        "id": "new_institute_4",
+        "name": "Land Use Certificate",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE%203%20Norms%20for%20Land%20and%20Built%20up%20Area%20Requirements%20of%20the.pdf"
+      },
+      {
+        "id": "new_institute_5",
+        "name": "Building Plan",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/CERTIFICATE-2.pdf"
+      },
+      {
+        "id": "new_institute_6",
+        "name": "Financial Proof",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/CERTIFICATE-3_0.pdf"
+      },
+      {
+        "id": "new_institute_7",
+        "name": "Digital Signature Certificate (DSC)",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/CERTIFICATE-3_0.pdf"
+      },
+      {
+        "id": "new_institute_8",
+        "name": "Society/Trust/Company Registration Certificate",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE%2017%20RECOMMENDED%20COMPOSITION%20OF%20BOARD.pdf"
+      },
+      {
+        "id": "new_institute_9",
+        "name": "Detailed Project Report (DPR)",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-9%20mba%20pgdm%20in%20iev.pdf"
+      },
+      {
+        "id": "new_institute_10",
+        "name": "Compliance Documents",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/AFFIDAVIT-5%20for%20the%20compliance%20of%20AICTE%20norms%20for%20universities%20chapter%204.pdf"
+      },
+      {
+        "id": "new_institute_11",
+        "name": "State NOC",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-1.pdf"
+      }
+    ]
+  },
+  {
+    "id": "eoa",
+    "name": "Extension of Approval (EoA)",
+    "documents": [
+      {
+        "id": "eoa_0",
+        "name": "Self-Disclosure Format",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-1.pdf"
+      },
+      {
+        "id": "eoa_1",
+        "name": "Accreditation Proof",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-5%20norms%20for%20faculty%20requirements.pdf"
+      },
+      {
+        "id": "eoa_2",
+        "name": "Admission Reports",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-10%20undertaking%20to%20be%20submitted%20by%20the%20applicant%20institute.pdf"
+      },
+      {
+        "id": "eoa_3",
+        "name": "Financial Statements",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-5%20norms%20for%20faculty%20requirements.pdf"
+      },
+      {
+        "id": "eoa_4",
+        "name": "Infrastructure Readiness Report",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE%203%20Norms%20for%20Land%20and%20Built%20up%20Area%20Requirements%20of%20the.pdf"
+      },
+      {
+        "id": "eoa_5",
+        "name": "State/University Affiliation Letter",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-2.pdf"
+      },
+      {
+        "id": "eoa_6",
+        "name": "Fee Payment Proof",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-3.pdf"
+      }
+    ]
+  },
+  {
+    "id": "collaboration",
+    "name": "Collaboration & Twinning Programs",
+    "documents": [
+      {
+        "id": "collaboration_0",
+        "name": "Memorandum of Understanding (MoU)",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-1.pdf"
+      },
+      {
+        "id": "collaboration_1",
+        "name": "Approval Letters",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-5%20norms%20for%20faculty%20requirements.pdf"
+      },
+      {
+        "id": "collaboration_2",
+        "name": "Course Curricula",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-10%20undertaking%20to%20be%20submitted%20by%20the%20applicant%20institute.pdf"
+      },
+      {
+        "id": "collaboration_3",
+        "name": "Governance and Management Structure",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-3%20Norms%20for%20Land%20and%20Built%20up%20Area%20Requirements%20of%20the.pdf"
+      }
+    ]
+  },
+  {
+    "id": "odl_ol",
+    "name": "Open and Distance Learning (ODL)/Online Learning (OL)",
+    "documents": [
+      {
+        "id": "odl_ol_0",
+        "name": "LMS Infrastructure Proof",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-2.pdf"
+      },
+      {
+        "id": "odl_ol_1",
+        "name": "Academic Records",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-5%20norms%20for%20faculty%20requirements.pdf"
+      },
+      {
+        "id": "odl_ol_2",
+        "name": "Content Accreditation",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-10%20undertaking%20to%20be%20submitted%20by%20the%20applicant%20institute.pdf"
+      },
+      {
+        "id": "odl_ol_3",
+        "name": "Student Support Details",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-3.pdf"
+      }
+    ]
+  },
+  {
+    "id": "penal_actions",
+    "name": "Penal Actions (For Norm Violations)",
+    "documents": [
+      {
+        "id": "penal_actions_0",
+        "name": "Compliance Report",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-1.pdf"
+      },
+      {
+        "id": "penal_actions_1",
+        "name": "Supporting Evidence",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-3%20Norms%20for%20Land%20and%20Built%20up%20Area%20Requirements%20of%20the.pdf"
+      },
+      {
+        "id": "penal_actions_2",
+        "name": "Affidavit",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-5%20norms%20for%20faculty%20requirements.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hibernation",
+    "name": "Hibernation or Closure of Institutions",
+    "documents": [
+      {
+        "id": "hibernation_0",
+        "name": "Affidavit",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-2.pdf"
+      },
+      {
+        "id": "hibernation_1",
+        "name": "Notification to Stakeholders",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-5%20norms%20for%20faculty%20requirements.pdf"
+      },
+      {
+        "id": "hibernation_2",
+        "name": "Student Transition Plan",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/ANNEXURE-10%20undertaking%20to%20be%20submitted%20by%20the%20applicant%20institute.pdf"
+      },
+      {
+        "id": "hibernation_3",
+        "name": "Financial Settlement Proof",
+        "pdfPath": "https://www.aicte-india.org/sites/default/files/FORMAT-3.pdf"
+      }
+    ]
+  }
+  
+]

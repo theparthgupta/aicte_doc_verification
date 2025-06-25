@@ -1,0 +1,194 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum EvaluatorRole {
+  ADMIN
+  FORGERY_CHECKER
+  LAYOUT_CHECKER
+  CONTENT_CHECKER
+}
+
+enum Doer {
+  EVALUATOR
+  UNIVERSITY
+}
+
+enum LogObject {
+  APPLICATION
+  DOCUMENT
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+  P5
+}
+
+enum Actions {
+  APP_CREATED
+  DOC_SUBMITTED
+  DOC_RESUBMITTED
+  PRIORITY_CHANGED
+  DOC_VIEWED
+  APPROVED
+  REJECTED
+}
+
+enum DocumentStatus {
+  NOT_SUBMITTED
+  SUBMITTED
+  PROCESSING
+  VERIFIED
+  ASSIGNED
+  IN_REVIEW
+  APPROVED
+  REJECTED
+}
+
+enum InstituteStatus {
+  UNVERIFIED
+  PROCESSING
+  VERIFIED
+  APPROVED
+  REJECTED
+}
+
+model ContactDetails {
+  phone        String      @id
+  title        String
+  firstName    String
+  middleName   String?
+  lastName     String
+  designation  String
+  address      String
+  district     String
+  state        String
+  postalCode   String
+  email        String      @unique
+  altEmail     String?
+  universityId String      @unique
+  university   University? @relation(fields: [universityId], references: [id])
+}
+
+model University {
+  id                    String                  @id @default(uuid(4))
+  email                 String                  @unique
+  phone                 String                  @unique
+  password              String
+  universityName        String
+  universityType        String
+  state                 String
+  district              String
+  //TODO can be used for scheduling
+  geolocation           String?
+  pincode               Int
+  status                InstituteStatus         @default(UNVERIFIED)
+  contatctDetails       ContactDetails?
+  UniversityApplication UniversityApplication[]
+}
+
+model Evaluator {
+  evaluator_id         String                      @id @default(uuid())
+  email                String                      @unique
+  phone                String                      @unique
+  password             String
+  state                String
+  district             String
+  pincode              String
+  role                 EvaluatorRole
+  specialization       String[]
+  assigned_application UniversityApplication[]
+  assigned_document    EvaluatorDocumentRelation[]
+}
+
+model UniversityApplication {
+  uni_application_id  String                @id @default(uuid())
+  application_id      String
+  application_name    String
+  application_desc    String
+  messages            Json?
+  createdOn           DateTime              @default(now())
+  universityId        String
+  university          University            @relation(fields: [universityId], references: [id])
+  status              DocumentStatus        @default(NOT_SUBMITTED)
+  application         ApplicationTypes      @relation(fields: [application_id], references: [application_id])
+  UniversityDocuments UniversityDocuments[]
+  evaluator_id        String?
+  Evaluator           Evaluator?            @relation(fields: [evaluator_id], references: [evaluator_id])
+}
+
+model UniversityDocuments {
+  uni_doc_id         String                      @id @default(uuid())
+  uni_application_id String
+  doc_id             String
+  errors             Json?
+  extractedTexts     Json?
+  uni_doc_uri        String?
+  timestamp          DateTime                    @default(now())
+  messages           Json?
+  status             DocumentStatus              @default(NOT_SUBMITTED)
+  application        UniversityApplication       @relation(fields: [uni_application_id], references: [uni_application_id], onDelete: Cascade)
+  document           Document                    @relation(fields: [doc_id], references: [doc_id])
+  assigned_evaluator EvaluatorDocumentRelation[]
+}
+
+model EvaluatorDocumentRelation {
+  id           String              @id @default(uuid())
+  evaluator_id String
+  uni_doc_id   String
+  status       DocumentStatus      @default(ASSIGNED)
+  check_type   EvaluatorRole
+  evaluator    Evaluator           @relation(fields: [evaluator_id], references: [evaluator_id])
+  document     UniversityDocuments @relation(fields: [uni_doc_id], references: [uni_doc_id])
+}
+
+model ApplicationTypes {
+  application_id          String                  @id @default(uuid())
+  application_name        String
+  application_description String
+  deadline                DateTime?
+  priority                Priority                @default(MEDIUM)
+  documents               ApplicationDocuments[]
+  UniversityApplication   UniversityApplication[]
+}
+
+model Document {
+  doc_id              String                 @id @default(uuid())
+  doc_name            String
+  format_uri          String?
+  deadline            DateTime               @default(now())
+  priority            Priority               @default(MEDIUM)
+  application_type    ApplicationDocuments[]
+  UniversityDocuments UniversityDocuments[]
+}
+
+model Logs {
+  id                 String    @id @default(uuid())
+  timestamp          DateTime  @default(now())
+  uni_application_id String?
+  uni_document_id    String?
+  evaluator_id       String?
+  actionPerformed    String
+  doer               Doer
+  object             LogObject
+}
+
+model ApplicationDocuments {
+  application_id String
+  doc_id         String
+  applicationR   ApplicationTypes @relation(fields: [application_id], references: [application_id])
+  documentR      Document         @relation(fields: [doc_id], references: [doc_id])
+
+  @@unique([application_id, doc_id])
+}
